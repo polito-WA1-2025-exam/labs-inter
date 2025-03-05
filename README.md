@@ -1,11 +1,11 @@
-# Group "GROUP NAME"
+# Group "Inter"
 
 ## Members
-- s123456 LASTNAME FIRSTNAME
+- s337994 Carchia Bruno
 - s123456 LASTNAME FIRSTNAME
 - s123456 LASTNAME FIRSTNAME
 
-# Exercise "NAME OF EXERCISE"
+# Exercise "Rescuing Surplus Food"
 
 # Lab Journal
 
