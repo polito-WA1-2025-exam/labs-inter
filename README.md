@@ -2,8 +2,7 @@
 
 ## Members
 - s337994 Carchia Bruno
-- s123456 LASTNAME FIRSTNAME
-- s123456 LASTNAME FIRSTNAME
+- S344149 Cassibba Andrea
 
 # Exercise "Rescuing Surplus Food"
 
