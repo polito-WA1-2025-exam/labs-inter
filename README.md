@@ -7,7 +7,7 @@
 # Exercise "Rescuing Surplus Food"
 
 # Lab Journal -> [SurplusFood](https://polito-webapp1.github.io/lab-2025/Lab00/SurplusFood.pdf)
-## [Lab 1](https://polito-webapp1.github.io/lab-2025/Lab01/Lab01.pdf)
+## [Lab 2](https://polito-webapp1.github.io/lab-2025/Lab02/Lab02.pdf)
 
 The application is structured around the following main objects and their relationships:
 ### Objects

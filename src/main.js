@@ -1,3 +1,4 @@
 "use strict";
-const dayjs = require("dayjs")
+import { initDatabase } from "./service/database.js";
 
+initDatabase();
