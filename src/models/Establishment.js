@@ -16,6 +16,8 @@ function Establishment (id,  name, address, phone_number, food_category, type, b
         }
     }
 
+    this.getID = () => this.id;
+
     this.removeBag = (bagId) => 
     {
         const index = this.bags.findIndex(bag => bag.getId() == bagId )
@@ -51,3 +53,4 @@ function Establishment (id,  name, address, phone_number, food_category, type, b
     }
 
 }
+export default Establishment;

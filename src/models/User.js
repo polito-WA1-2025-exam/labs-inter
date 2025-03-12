@@ -10,3 +10,5 @@ function User(id,name,email,shoppingCart=null)
         console.log(`User Name: ${this.name}`);
     }
 }
+
+export default User;

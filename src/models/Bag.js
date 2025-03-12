@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 
-function Bag(id, type, price, size, status, start_date, end_date, establishment={}, foods=[])
+function Bag(id, type, price, size, status, start_date, end_date, establishment={}, foods=[],user = {})
 {
     this.id = id;
     this.type = type;
@@ -12,6 +12,7 @@ function Bag(id, type, price, size, status, start_date, end_date, establishment=
     this.establishment = establishment;
     this.foodsDeleted = []
     this.foods = foods;
+    this.user = user
 
     this.addFood = function(food)
     {
@@ -46,7 +47,21 @@ function Bag(id, type, price, size, status, start_date, end_date, establishment=
     }
     this.isReserved = () => this.status == "reserved"
     this.isAvailable = () => this.status == "available"
-    
+    this.makeReserved = () => this.status = "reserved"
+    this.getID = () => this.id;
+
+
+    this.reserve = function (user) {
+        if (this.state === "available") {
+            this.state = "reserved";
+            this.user = user;
+            console.log(`Bag ${this.id} reserved by user ${user}`);
+            return true;
+        }
+
+        console.log(`Bag ${this.id} is not available for reservation`);
+        return false;
+    }
     this.equalTo = function(bag)
     {
         return this.id == bag.id;
@@ -59,8 +74,8 @@ function Bag(id, type, price, size, status, start_date, end_date, establishment=
 
     this.getId = () => this.id;
     this.getDeadline = () => this.end_date;
-    this.getEstablishment = () => this.establishment
-
+    this.getEstablishment = () => this.establishment;
+    this.getPrice = () => this.price;
 
     this.release = () => {
         if(this.state == "reserved")
@@ -85,3 +100,4 @@ function Bag(id, type, price, size, status, start_date, end_date, establishment=
     }
 
 }
+export default Bag;

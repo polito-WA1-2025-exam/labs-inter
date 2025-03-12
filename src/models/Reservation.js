@@ -15,9 +15,14 @@ function Reservation(id, user, bags, created_at, status,removedItems=[],allergie
     {
         return this.id == res.id;
     }
-
+    this.getPrice = () => {
+        let sum = 0;
+        this.bags.forEach(bag => sum += bag.getPrice())
+        return sum;
+    }
+    this.getID = () => this.id;
     this.getCreatedAt = () => this.created_at;
-
+    this.setStatus = () => this.status = status;
     this.getAllEstablishments = () => {
         const establishments = new Set();
         this.bags.forEach(bag => establishments.add(bag.getEstablishment()))
@@ -68,3 +73,4 @@ function Reservation(id, user, bags, created_at, status,removedItems=[],allergie
    
 
 }
+export default Reservation;
